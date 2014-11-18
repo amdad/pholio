@@ -1,0 +1,14 @@
+.about {
+    padding-right:30px;
+}
+
+.about h2 {
+    font-size:22px;
+    text-transform: capitalize;
+    margin-bottom:20px;
+}
+
+.about img {
+    float:left;
+    margin-right:30px;
+}

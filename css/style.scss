@@ -1,0 +1,86 @@
+body {
+    font-family: 'Inconsolata' ;
+}
+
+header {
+    width: 25%;
+    padding: 0% 0 0% 5%;
+    float: left;
+    height: inherit;
+    margin-right: 2%;
+    position: fixed;
+    overflow: hidden;
+    padding: 4% 1% 4% 3%;
+    left: 0;
+    top: 0;
+
+    h1 a {
+        font-weight: bold;
+        display: block;
+        color:black;
+        text-decoration: none;
+        font-size:40px;
+        margin-bottom:32px;
+    }
+
+    li a {
+        color: black;
+        font-size: 18px;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: capitalize;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .copy {
+        margin-top:20px;
+        color:gray;
+        font-size:12px;
+    }
+}
+
+.content {
+    float: left;
+    width: 75%;
+    margin: 4% 1% 4% 25%;
+}
+
+.content-wrapper .item {
+    position:absolute;
+    margin:0;
+    width:250px;
+    height:auto;
+    opacity:0;
+    -webkit-transition: opacity 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+       -moz-transition: opacity 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+         -o-transition: opacity 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+            transition: opacity 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); /* ease-out */
+
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000);
+       -moz-transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000);
+         -o-transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000);
+            transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000); /* ease-out */
+
+}
+
+.content-wrapper.show .item {
+    opacity:1;
+}
+
+.content-wrapper .item a {
+    display:block;
+    width:inherit;
+    height:inherit;
+}
+
+.content-wrapper .item a:hover {
+    cursor: url('/img/plus_cursor.png') 25 25, auto;
+}
+
+.content-wrapper .item img {
+    width:100%;
+    height:auto;
+}
